@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'searchengine/style.css' %}">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Engine</title>
+</head>
+<body>
+	<form action="/search/" method="get">
+		<input type="text" name="word" placeholder="Search here">
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>
